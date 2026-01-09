@@ -37,8 +37,3 @@ Mengelola proses data mahasiswa:
 # Kesimpulan:
    Kode ini memisahkan data (Student), proses (StudentProcess), dan tampilan (StudentView) sehingga program menjadi rapi, mudah
    dipahami, dan mudah dikembangkan.
-
-
-
-
->>>>>>> 24911af78d33bce9202579247c29e0567d2daf4e
