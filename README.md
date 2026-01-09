@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Nama : Fadhil Syafiq Abdullah (312510161)
 
 ## Program ini adalah aplikasi sederhana pendataan mahasiswa yang menggunakan konsep OOP (Object-Oriented Programming) dan pemisahan tugas antar kelas.
@@ -33,3 +33,4 @@ Mengelola proses data mahasiswa:
 # Kesimpulan:
    Kode ini memisahkan data (Student), proses (StudentProcess), dan tampilan (StudentView) sehingga program menjadi rapi, mudah
    dipahami, dan mudah dikembangkan.
+
