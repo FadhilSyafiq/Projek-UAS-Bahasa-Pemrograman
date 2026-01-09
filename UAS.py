@@ -1,6 +1,8 @@
+
 # ===== Class Data =====
 class Student:
-    def __init__(self, name, score):
+    def __init__(self, nim, name, score):
+        self.nim = nim
         self.name = name
         self.score = score
 
@@ -12,6 +14,10 @@ class StudentProcess:
 
     def input_student(self):
         try:
+            nim = input("Masukkan NIM mahasiswa: ")
+            if not nim.strip():
+                raise ValueError("NIM tidak boleh kosong")
+
             name = input("Masukkan nama mahasiswa: ")
             if not name.strip():
                 raise ValueError("Nama tidak boleh kosong")
@@ -20,7 +26,7 @@ class StudentProcess:
             if score < 0 or score > 100:
                 raise ValueError("Nilai harus antara 0 sampai 100")
 
-            self.students.append(Student(name, score))
+            self.students.append(Student(nim, name, score))
             print("Data berhasil ditambahkan!\n")
 
         except ValueError as e:
@@ -37,14 +43,14 @@ class StudentView:
             print("Belum ada data.")
             return
 
-        print("\n+----+----------------------+-------+")
-        print("| No | Nama                 | Nilai |")
-        print("+----+----------------------+-------+")
+        print("\n+----+--------------+----------------------+-------+")
+        print("| No | NIM          | Nama                 | Nilai |")
+        print("+----+--------------+----------------------+-------+")
 
         for i, student in enumerate(students, start=1):
-            print(f"| {i:<2} | {student.name:<20} | {student.score:>5} |")
+            print(f"| {i:<2} | {student.nim:<12} | {student.name:<20} | {student.score:>5} |")
 
-        print("+----+----------------------+-------+")
+        print("+----+--------------+----------------------+-------+")
 
 
 # ===== Main Program =====
