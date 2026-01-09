@@ -26,13 +26,18 @@ Mengelola proses data mahasiswa:
    show_table() → menampilkan data dalam bentuk tabel berisi nomor, NIM, nama, dan nilai
 
 4. Fungsi Main
-   Merupakan program utama yang menyediakan menu:, 
-   Menambah data mahasiswa, 
-   Menampilkan data mahasiswa, 
-   Keluar dari program.
+   Merupakan program utama yang menyediakan menu:
+   
+   Menambah data mahasiswa
+   
+   Menampilkan data mahasiswa
+   
+   Keluar dari program
+   
 # Kesimpulan:
    Kode ini memisahkan data (Student), proses (StudentProcess), dan tampilan (StudentView) sehingga program menjadi rapi, mudah
    dipahami, dan mudah dikembangkan.
+
 
 
 
